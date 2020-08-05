@@ -1,5 +1,5 @@
 # Switch DNS
-![logo](https://raw.githubusercontent.com/XYZliang/Switch-DNS/master/Switch-DNS/icons.png)
+![logo](https://raw.githubusercontent.com/XYZliang/Switch-DNS/master/Switch-DNS/icon.png)
 
 ## 前言
 
