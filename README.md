@@ -26,7 +26,8 @@ Alfred workflow:快速切换macOS DNS 服务器设置
 ## 安装Switch DNS
 
 前往下载目录，双击SwitchDNS.alfredworkflow即可跳转Alfred进行安装
-*需要自行购买Alfred powerpack，在条件允许的情况下，还请支持正版！*
+
+`需要自行购买Alfred powerpack，在条件允许的情况下，还请支持正版`
 
 
 ## 使用方法
