@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.XYZliang.switchdns</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>E0DE2E8E-2801-452A-9098-6753C5A55DD2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3152A3A2-FCCD-42B3-B07F-301144CD559B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>XYZliang</string>
+	<key>description</key>
+	<string>快速切换macOS DNS 服务器设置</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Switch DNS</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>dns</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在加载预设～</string>
+				<key>script</key>
+				<string>sh dns_ops.sh list_dns "
+alibaba:Alibaba Public DNS:223.5.5.5,223.6.6.6
+v2ex:V2EX Public DNS:199.91.73.222,178.79.131.110
+114:114 Public DNS:114.114.114.114,114.114.115.115
+google:Google Public DNS:8.8.8.8,8.8.4.4
+jxufe:Jxufe DNS:218.87.6.206,210.35.207.8
+"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>快速切换macOS DNS 服务器设置</string>
+				<key>title</key>
+				<string>Switch DNS</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E0DE2E8E-2801-452A-9098-6753C5A55DD2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>sh dns_ops.sh switch_dns {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Switch DNS</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3152A3A2-FCCD-42B3-B07F-301144CD559B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>快速切换macOS DNS 服务器设置</string>
+	<key>uidata</key>
+	<dict>
+		<key>3152A3A2-FCCD-42B3-B07F-301144CD559B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>E0DE2E8E-2801-452A-9098-6753C5A55DD2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>FF316160-82F1-4AC1-8D82-72A1F0AC9ED6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/XYZliang/Switch-DNS</string>
+</dict>
+</plist>
