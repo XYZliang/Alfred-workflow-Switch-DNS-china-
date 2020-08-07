@@ -17,7 +17,6 @@ Alfred workflow:快速切换macOS DNS 服务器设置
 * V2EX Public DNS: 199.91.73.222 178.79.131.110
 * 114 Public DNS: 114.114.114.114 114.114.115.115
 * Google Public DNS: 8.8.8.8 8.8.4.4
-* Opener DNS: 42.120.21.30
 * Jxufe DNS：218.87.6.206,210.35.207.8
 
 ## 下载Switch DNS
