@@ -4,8 +4,10 @@
 ## 前言
 
 > 本项目基于[kodango](https://github.com/kodango)的[switchdns](https://github.com/kodango/switchdns)项目。意在加入更多中国优质的DNS，并更新旧版的图标
-> 
+>
 > 在macOS 10.15/11.0beta，Alfred2～4测试可正常使用，其他系统和Alfred版本未经测试
+>
+> 最近忙着准备即将到来的蓝桥杯，准备进行训练。暂时不会更新此项目。
 
 ## 简介
 
